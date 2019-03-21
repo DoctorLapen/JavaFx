@@ -1,0 +1,27 @@
+.font{
+     -fx-font-size: 18pt;
+     }
+.background{
+          -fx-background-color: #696969;
+          }
+.field{
+    -fx-background-color: #a9a9a9;
+    }
+.mode{
+      -fx-text-fill: #32cd32;
+      }
+
+.error{
+       -fx-text-fill: #dc143c;
+       }
+
+.calc{
+       -fx-text-fill:#fffafa;
+       -fx-border-color:  #00bfff;
+       -fx-border-width: 5px;
+       -fx-border-radius: 25px;
+       }
+.radio{-fx-background-color: #00bfff;
+       -fx-padding: 3px;
+
+       }

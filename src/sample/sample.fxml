@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="308.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="btn" layoutX="29.0" layoutY="144.0" mnemonicParsing="false" onAction="#Calc" stylesheets="@style.css" text="Calc">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calc" />
+            <String fx:value="background" />
+         </styleClass></Button>
+      <RadioButton layoutX="29.0" layoutY="101.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="52.0" selected="true" text="C" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="132.0" layoutY="101.0" mnemonicParsing="false" text="F" textFill="WHITE" toggleGroup="$group">
+         <font>
+            <Font size="24.0" />
+         </font></RadioButton>
+      <Label fx:id="outputLabel" layoutX="29.0" layoutY="205.0" styleClass="result" textFill="#00aaff">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextField fx:id="textField" layoutX="20.0" layoutY="50.0" styleClass="field" stylesheets="@style.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label fx:id="mode" layoutX="18.0" layoutY="10.0" styleClass="mode" text="Конвертація з С у F">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="error" layoutX="27.0" layoutY="205.0" styleClass="error" stylesheets="@style.css">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
